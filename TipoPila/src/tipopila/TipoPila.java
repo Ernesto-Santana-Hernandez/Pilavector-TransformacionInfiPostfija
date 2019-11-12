@@ -19,7 +19,8 @@ public class TipoPila {
                     + "3)Cima Pila\n"
                     + "4)Pila Vacia\n"
                     + "5)Limpiar Pila\n"
-                    + "6)Salir", "Alerta!!"));
+                    + "6)Mostrar Pila\n"
+                    + "7)Salir", "Alerta!!"));
             switch (res) {
                 case 1:
                     a = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa un valor"));
@@ -38,6 +39,9 @@ public class TipoPila {
                     objPilaEnteros.limpiarPila();
                     break;
                 case 6:
+                    objPilaEnteros.mostrarPila();
+                    break;
+                case 7:
                     System.exit(0);
                     break;
                 default:

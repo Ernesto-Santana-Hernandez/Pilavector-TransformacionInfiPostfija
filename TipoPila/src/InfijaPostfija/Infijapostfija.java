@@ -7,7 +7,7 @@ public class Infijapostfija {
 
     public static void main(String[] args) {
         infijapostfijaa objinpo = new infijapostfijaa();
-        System.out.println("Ingresa una expresión algebraica: ");
+        System.out.println("Escribe una expresión algebraica: ");
         Scanner leer = new Scanner(System.in);
 
         String expresion = objinpo.depurar(leer.nextLine());

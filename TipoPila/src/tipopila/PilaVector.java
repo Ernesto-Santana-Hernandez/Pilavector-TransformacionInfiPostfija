@@ -28,6 +28,14 @@ public class PilaVector {
         cima--;
         return aux;
     }
+    public void mostrarPila(){
+        for (int i = listaPila.size(); i > 0; i--) {
+            if ((int) listaPila.elementAt(i - 1) != 0) {
+                System.out.println(listaPila.elementAt(i - 1));
+            }
+
+        }
+    }
 
     public Object cimaPila() throws Exception {
         if (pilaVacia()) {
